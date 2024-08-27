@@ -1,6 +1,6 @@
-/checkpoints
-/data
-/models
-/runs
+/checkpoints/*
+/data/*
+/models/*
+/runs/*
 /.vscode
 /.dvc
