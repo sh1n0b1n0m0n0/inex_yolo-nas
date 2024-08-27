@@ -1,0 +1,32 @@
+classes: 
+  - plate
+  - sedan_rear
+  - suv_rear
+  - truck_rear
+  - van_rear
+  - pickup_rear
+  - bus_rear
+  - motorcycle_rear
+  - unknown_rear
+  - sedan_front
+  - suv_front
+  - truck_front
+  - van_front
+  - pickup_front
+  - bus_front
+  - motorcycle_front
+  - unknown_front
+  - windshield
+  - person
+
+global_dataset_params:
+  data_dir: ./data
+  train:
+    images: train/images
+    labels: train/labels
+  val:
+    images: val/images
+    labels: val/labels
+  test:
+    images: test/images
+    labels: test/labels

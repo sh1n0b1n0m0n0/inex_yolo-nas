@@ -1,0 +1,23 @@
+predict_params:
+  model: yolo_nas_s
+  weights_dir: "checkpoints/runs/RUN_20240822_100450_293271/ckpt_best.pth"
+  save_dir: "runs"
+  save_dir_name: "exp"
+  exist_ok: false
+  model_conf_thresh: 0.5
+  conf_thresh: 0.5
+  num_workers: 0
+  batch_size: 16
+  num_classes: 19
+  
+  test_metrics_list:
+    score_thres: 0.1
+    top_k_predictions: 300
+    normalize_targets: true
+
+  post_prediction_callback:
+    score_threshold: 0.01
+    nms_top_k: 1000
+    max_predictions: 300
+    nms_threshold: 0.7
+  
